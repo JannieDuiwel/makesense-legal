@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MakeSense Privacy Policy</title>
+<meta name="description" content="How the MakeSense app collects, uses, stores and deletes personal information.">
+<style>
+  /* System fonts only: a privacy policy should not make the reader's browser contact a font host. */
+  :root {
+    --bg: #F6F7F9; --surface: #FFFFFF; --ink: #16191D; --ink-2: #4A5561; --line: #D5DBE1;
+    --accent: #1456B8; --note-bg: #FFF4D6; --note-line: #E0B43A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1215; --surface: #171B20; --ink: #E8ECEF; --ink-2: #A2ADB8; --line: #2C343C;
+            --accent: #7DB8FF; --note-bg: #2B2410; --note-line: #8A6D14; color-scheme: dark; }
+  }
+  html { background: var(--bg); }
+  body { margin: 0; color: var(--ink); background: var(--bg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .5rem; padding-top: .4rem; border-top: 1px solid var(--line); }
+  p, ul { margin: .6rem 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--ink-2); margin: 0 0 1.5rem; }
+  .box { background: var(--note-bg); border: 1px solid var(--note-line); border-radius: 8px; padding: .8rem 1rem; margin: 1.2rem 0; }
+  .scroll { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .7rem; border: 1px solid var(--line); font-size: .93rem; }
+  th { font-weight: 600; background: color-mix(in srgb, var(--line) 35%, var(--surface)); }
+  nav { margin-bottom: 1.2rem; font-size: .93rem; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  @media print { body { background: #fff; color: #000; } a { color: #000; } }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Legal</a> &middot; <a href="delete-account.html">Delete your account</a></nav>
+
+  <h1>MakeSense Privacy Policy</h1>
+  <p class="meta">Effective 1 October 2026 &middot; Applies to the MakeSense mobile app</p>
+
+  <p>MakeSense is an app for monitoring and controlling MakeSense controllers and sensors. It is published by
+  <strong>MakeSense Embedded Systems</strong>, South Africa ("we", "us"). We are the responsible party under the South African
+  Protection of Personal Information Act (POPIA) for the personal information described here.</p>
+
+  <div class="box"><strong>The short version.</strong> We collect what is needed to run your account and your devices, and nothing for
+  advertising. We do not sell personal information, and the app contains no advertising or analytics software. You can delete your
+  account and its data from inside the app at any time.</div>
+
+  <h2>1. What we collect</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Information</th><th>What it is</th><th>Why we need it</th></tr></thead>
+    <tbody>
+      <tr><td>Account</td><td>Your email address, your password (stored only in hashed form, so we cannot read it), and an optional display name.</td><td>To sign you in and to link devices to you.</td></tr>
+      <tr><td>Your devices and settings</td><td>Device names, configuration, automations, dashboards, preferences, and who you have shared a device with. If you set up the optional MQTT or Home Assistant connection, the broker address, user name and password you enter are stored with the device configuration.</td><td>To run your devices and deliver settings to them.</td></tr>
+      <tr><td>Device readings and events</td><td>Sensor readings, output states, events and faults that your devices report, and the commands you send.</td><td>To show your data, charts and history, and to raise alerts.</td></tr>
+      <tr><td>Location</td><td>If you allow it, your phone's location once while you set up a device. It is rounded to about 110 metres and saved with that device's settings.</td><td>To work out sunrise and sunset for schedules and to fetch weather forecasts for weather-based automations.</td></tr>
+      <tr><td>Notification token</td><td>A code that identifies your phone to the push notification services, with the platform (Android or iOS) and dates of use.</td><td>To deliver alerts from your devices to your phone.</td></tr>
+      <tr><td>Technical logs</td><td>Our hosting provider keeps standard server logs, such as IP addresses and request times.</td><td>Security and keeping the service running.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Not stored by us:</strong> your WiFi password and your device's secret key are sent to the device over Bluetooth and are kept on the
+  device. They are not saved to our database.</p>
+  <p><strong>We do not collect:</strong> advertising identifiers, contacts, photos, camera or microphone data, or your location in the background.
+  The app does not include advertising or analytics software.</p>
+
+  <h2>2. Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Bluetooth:</strong> to find your devices and set them up. On Android, scanning for Bluetooth devices also needs the location permission. For scanning, we use it only to find nearby devices.</li>
+    <li><strong>Location (while the app is open):</strong> to read your approximate position once when you set up a device, as described above. You can refuse; setup still works, and you can type coordinates yourself.</li>
+    <li><strong>Local network:</strong> to find and talk to devices on your own network.</li>
+    <li><strong>Notifications:</strong> to deliver alerts. You can turn them off in your phone's settings or in the app.</li>
+  </ul>
+
+  <h2>3. Who else handles your information</h2>
+  <p>We use these providers to run the service. They act on our behalf and are not allowed to use your information for their own advertising.</p>
+  <ul>
+    <li><strong>Supabase</strong>: database, sign-in and live updates. Our data is stored in Ireland (European Union).</li>
+    <li><strong>Expo</strong>, with <strong>Google Firebase Cloud Messaging</strong> (Android) and <strong>Apple Push Notification service</strong> (iOS): delivery of push notifications. The text of an alert, such as a device name and what happened, passes through them.</li>
+    <li><strong>MET Norway</strong>: weather forecasts. Our servers send the rounded coordinates of a device that uses weather automations, and nothing that identifies you.</li>
+    <li><strong>Google Play</strong>: distributes the app. Google handles your download and its own records of it.</li>
+  </ul>
+  <p>Some of these providers may process information outside South Africa. We choose providers that make data-protection commitments.</p>
+  <p><strong>Sharing you control.</strong> If you share a device with another MakeSense user, that person can see its data with the permission you give them (read, write or admin), and you can remove them at any time. If you publish a recipe (a shared device setup) to the community library, other users can see it together with the display name you have set. Recipes never include your WiFi password or device key.</p>
+  <p>We may disclose information if the law requires it.</p>
+
+  <h2>4. How long we keep it</h2>
+  <ul>
+    <li><strong>Account and settings:</strong> until you delete your account.</li>
+    <li><strong>Device readings:</strong> until you delete them. In the app's Settings, Purge Old Data deletes readings older than 1, 3, 5 or 7 days, and deleting a device or your account deletes its readings.</li>
+    <li><strong>Device events:</strong> deleted automatically after 30 days.</li>
+    <li><strong>Notification token:</strong> removed when you sign out, and with your account when you delete it.</li>
+    <li><strong>Backups:</strong> our database provider may keep backup copies for a limited time after deletion.</li>
+  </ul>
+
+  <h2>5. Deleting your account</h2>
+  <p>In the app, open the Account tab, choose Delete account, type DELETE and confirm. This permanently removes your account, your devices, their readings, events and settings, your sharing and your published recipes. Full details, and how to ask us to do it for you, are on the
+  <a href="delete-account.html">delete your account</a> page.</p>
+  <p>Before the account is removed we save a few anonymous totals: how old the account was, how many devices it had, how many readings and events there were, and when the last reading arrived. They contain no name, email address, user ID or device identifier and cannot be traced back to you. We keep them to understand how the service is used.</p>
+
+  <h2>6. Your rights</h2>
+  <p>You may ask us to tell you what personal information we hold about you, to correct it, or to delete it, and you may object to its processing or withdraw a permission you gave. Most of this you can do yourself in the app. For anything else, write to us at <a href="mailto:MakeSense@gmail.com">MakeSense@gmail.com</a>. We reply within 30 days.</p>
+  <p>If you are not satisfied, you can complain to South Africa's Information Regulator at <a href="https://inforegulator.org.za">inforegulator.org.za</a>.</p>
+
+  <h2>7. Security</h2>
+  <p>Traffic between the app and our servers is encrypted. Access rules in our database let each person reach only their own devices and the devices shared with them. Passwords are stored hashed.</p>
+  <p>Between the app and a controller on your own local network, communication may use plain HTTP, as it does for many local devices. Keep your WiFi network secured. No system is perfectly secure; if you think your account has been compromised, change your password and contact us.</p>
+
+  <h2>8. Children</h2>
+  <p>MakeSense is not directed at children under 18, and we do not knowingly collect their information.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If we change this policy we will update the date at the top and, for significant changes, tell you in the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>MakeSense Embedded Systems, South Africa<br>
+  Email: <a href="mailto:MakeSense@gmail.com">MakeSense@gmail.com</a></p>
+</main>
+</body>
+</html>
